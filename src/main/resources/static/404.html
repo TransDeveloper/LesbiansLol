@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oops | lesbians.lol</title>
+    <style>
+        *{}
+        body{
+            background-color: #000; /* fallback */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: calc(100vw - 50px);
+            height: calc(100vh - 45px);
+            border: 1px solid #e8ab00;
+            margin: 10px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .invert{
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="justify-content: center;display: flex;gap: 30px;align-items: center;background: #00000040;">
+    <h1 style="border-right: 2px solid white;padding: 25px;">
+        Oops
+    </h1>
+    <p class="invert" style="">
+        You have requested an unknown resource on lesbians.lol<br/>
+        Enjoy a frame of yuri.
+    </p>
+</div>
+</body>
+<script>
+const container = document.querySelector('.container');
+let randomId = Math.floor(Math.random() * (503 - 2 + 1)) + 2;
+
+
+document.body.style.backgroundImage = `url('/getFrame/${randomId}')`;
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center center";
+</script>
+</html>
